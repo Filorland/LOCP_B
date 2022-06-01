@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  jupyter:
+
+    image: locp_b_notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - $PWD:/opt/workspace
