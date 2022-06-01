@@ -4,7 +4,7 @@ ARG shared_workspace=/opt/workspace
 ENV SHARED_WORKSPACE=${shared_workspace}
 
 RUN apt-get update -y && \
-    pip3 install notebook matplotlib spektral==1.1.0 tf_agents==0.12.1 wandb tensorflow==2.8.0 numpy matplotlib.pyplot random pprint pyvirtualdisplay PIL.Image IPython imageio base64 __future__
+    pip3 install notebook matplotlib spektral==1.1.0 tf_agents==0.12.1 wandb tensorflow==2.8.0 numpy pyvirtualdisplay imageio 
 
 EXPOSE 8888
 
